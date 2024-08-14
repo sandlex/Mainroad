@@ -55,11 +55,19 @@
 
 # Social widget
 - id: social_title
-  translation: "Социальные сети"
+  translation: "Контакты"
 
 # Tags List widget
 - id: tags_title
   translation: "Теги"
+
+# Support widget
+- id: support_title
+  translation: "Поддержать проект"
+- id: support_button_title
+  translation: "PayPal - безопасный и быстрый сервис онлайн-платежей!"
+- id: support_button_alt
+  translation: "Поддержать при помощи PayPal"
 
 # Footer
 - id: footer_credits

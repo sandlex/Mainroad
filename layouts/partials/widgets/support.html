@@ -1,0 +1,10 @@
+{{- if .Site.Params.widgets.support }}
+<h4 class="widget-support__title widget__title">{{ T "support_title" }}</h4>
+<div class="widget-support__content widget__content" style="padding-bottom: 20px;">
+<form action="https://www.paypal.com/donate" method="post" target="_top">
+<input type="hidden" name="hosted_button_id" value="PLP7SLPGPLR6W" />
+<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" border="0" name="submit" />
+<img alt="" border="0" src="https://www.paypal.com/en_NL/i/scr/pixel.gif" width="1" height="1" />
+</form>
+</div>
+{{- end }}

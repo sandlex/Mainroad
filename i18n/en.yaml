@@ -61,6 +61,14 @@
 - id: tags_title
   translation: "Tags"
 
+# Support widget
+- id: support_title
+  translation: "Support project"
+- id: support_button_title
+  translation: "PayPal - secure and fast service for online payments!"
+- id: support_button_alt
+  translation: "Support with PayPal"
+
 # Footer
 - id: footer_credits
   translation:
