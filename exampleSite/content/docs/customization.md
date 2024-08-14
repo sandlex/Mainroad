@@ -62,6 +62,34 @@ Mainroad uses `#e22d30` as a default highlight color, but you may choose and set
   highlightColor = "#e22d30"
 ```
 
+### Post meta
+
+Post meta is a feature that refers to including additional meta information (such as author name, categories, date,
+translations, etc.) on pages. It can be enabled via config using the `post_meta` key with a list of meta field names as
+value. Order matters here: rearrange fields if you want to.
+
+```toml
+[Params]
+  post_meta = ["author", "date", "categories", "translations"]
+```
+
+Full list of available default post meta fields:
+
+* `author`, `categories`, `date`, `translations`
+
+In addition to the default meta fields, you can add your own by placing a custom partial under
+`layouts/partials/post_meta/<name>.html`.
+
+#### Post meta: `date` localization
+
+With [Hugo v0.87.0](https://gohugo.io/news/0.87.0-relnotes/) (or later), `date` meta field shows localized dates (with
+weekdays and months in the current language) by default. In most cases, such a transition is painless, but owners of
+multilingual sites should be careful and check that everything translates as expected after the upgrade.
+
+You can also use a predefined layout, like `:date_full`, and it will output localized dates or times. For additional
+information about localized dates and possible date/time formatting layouts, please see
+[Hugo: time.Format](https://gohugo.io/functions/dateformat/).
+
 ### Thumbnail visibility
 
 By default, a thumbnail image has shown for a list and single pages simultaneously. In some cases, you may want to show
