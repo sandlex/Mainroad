@@ -38,6 +38,7 @@
 	{{- if not .Site.IsServer }}
 		{{ template "_internal/google_analytics.html" . }}
 	{{- end }}
+	{{- partial "yandex_metrika.html" . -}}
 </head>
 <body class="body">
 	<div class="container container--outer">
